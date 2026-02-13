@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website showcasing web development projects and skills">
+    <meta name="keywords" content="web developer, portfolio, projects, frontend, backend">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Your Name - Portfolio">
+    <meta property="og:description" content="Web Developer Portfolio">
+    <meta property="og:type" content="website">
+    
+    <title>Samrah - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="logo">Samrah</a>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-greeting fade-in" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Hi, I'm</p>
+                    <h1 class="hero-title fade-in-up">
+                        <span class="text-gradient">Samrah Sayyed</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in-up">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description fade-in-up">
+                        An Electrical and Computer Engineering Junior with keen interest in embedded systems, human computer interaction and web development
+                    </p>
+                    <div class="hero-buttons fade-in-up">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in-right">
+                    <div class="hero-image-wrapper">
+                        <!-- Replace with your image -->
+                        <div class="profile-placeholder">
+                            <div class="hero-image-wrapper">
+                                <img src="./images/profile.jpeg" alt="Your Name" class="hero-profile-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <h2 class="section-title reveal-text">About Me</h2>
+                <div class="section-subtitle reveal-text">Get to know me!</div>
+                
+                <div class="about-content">
+                    <div class="about-text reveal-left">
+                        <h3>Hello! I'm a passionate budding developer</h3>
+                        <p>
+                            As a kid, I was always fascinated by how things were built, now that I'm studying engineering, I get to put my ideas to play and innovate new stuff regularly.
+                            When I am writing code, I try to be clean, maintainable and I believe in updating myself everyday with the latest tools and technologies.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me  
+                            exploring new frameworks, contributing to open source, or sharing knowledge 
+                            with the developer community.
+                        </p>
+                        
+                        <div class="career-objectives">
+                            <h4>Career Objectives</h4>
+                            <ul>
+                                <li>Build scalable and innovative web applications</li>
+                                <li>Contribute to impactful open-source projects</li>
+                                <li>Mentor aspiring developers and share knowledge</li>
+                                <li>Stay at the forefront of web technologies</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Resume
+                        </a>
+                    </div>
+                    
+                    <div class="skills-container reveal-right">
+                        <h3>Skills & Expertise</h3>
+                        
+                        <div class="skill-category">
+                            <h4>Frontend Development</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <div class="skill-icon">🎨</div>
+                                    <h5>HTML/CSS</h5>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">⚡</div>
+                                    <h5>JavaScript</h5>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">⚛️</div>
+                                    <h5>React</h5>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Backend Development</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <div class="skill-icon">🟢</div>
+                                    <h5>Node.js</h5>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">🗄️</div>
+                                    <h5>Databases</h5>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-icon">🔧</div>
+                                    <h5>APIs</h5>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Tools & Others</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Git</span>
+                                <span class="tool-tag">VS Code</span>
+                                <span class="tool-tag">Figma</span>
+                                <span class="tool-tag">Google Colab</span>
+                                <span class="tool-tag">MS Office</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Featured Projects</h2>
+                <div class="section-subtitle reveal-text">Some of my recent work</div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card reveal-scale" data-category="web">
+                        <div class="project-image">
+                            <img src="./images/project1.jpeg" alt="Sensor Integration with STM32" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="projects/project1.html" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">STM32</span>
+                                <span class="tag">Embedded Systems</span>
+                                <span class="tag">Hardware + Software</span>
+                            </div>
+                            <h3>Sensor Integration with STM32</h3>
+                            <p>
+                                A simple and robust implementation of integration of sensors with STM32, demonstrating security and scalability.
+                            </p>
+                            <div class="project-links">
+                                <a href="projects/project1.html" class="btn-text">
+                                    Read More
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-icon" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal-scale" data-category="web">
+                        <div class="project-image">
+                            <img src="./images/project2.png" alt="Skill Link" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="projects/project2.html" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Software</span>
+                            </div>
+                            <h3>Skill Link - Social Media Project</h3>
+                            <p>
+                                Full-stack MySQL-backed web application with authentication, profiles, posts, comments, and messaging.
+                            </p>
+                            <div class="project-links">
+                                <a href="projects/project2.html" class="btn-text">
+                                    Read More
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-icon" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card reveal-scale" data-category="mobile">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Home Automation" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="projects/project3.html" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Blynk IoT</span>
+                                <span class="tag">ESP8266</span>
+                                <span class="tag">Arduino IDE</span>
+                                <span class="tag">Hardware + Software</span>
+                            </div>
+                            <h3>Home Automation</h3>
+                            <p>
+                                Developed an IoT-based smart home prototype with remote fan control and real-time monitoring (temperature,
+humidity, gas, motion), via Blynk.
+                            </p>
+                            <div class="project-links">
+                                <a href="projects/project3.html" class="btn-text">
+                                    Read More
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-icon" aria-label="View live demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section section">
+            <div class="container">
+                <h2 class="section-title reveal-text">What People Say</h2>
+                <div class="section-subtitle reveal-text">Client testimonials</div>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <p class="testimonial-text">
+                                "Outstanding work! The attention to detail and commitment to quality exceeded 
+                                our expectations. Highly recommended for any web development project."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JD</div>
+                                <div class="author-info">
+                                    <h4>John Doe</h4>
+                                    <p>CEO, TechCorp</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <p class="testimonial-text">
+                                "Professional, responsive, and incredibly skilled. Delivered our project on time 
+                                and within budget. A pleasure to work with!"
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info">
+                                    <h4>Sarah Miller</h4>
+                                    <p>Product Manager, StartupXYZ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <p class="testimonial-text">
+                                "Transformed our vision into reality with expertise and creativity. The final 
+                                product exceeded all our expectations. 10/10!"
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">RJ</div>
+                                <div class="author-info">
+                                    <h4>Robert Johnson</h4>
+                                    <p>Founder, DesignHub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section --> <!--
+        <section id="blog" class="blog-section section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Latest Articles</h2>
+                <div class="section-subtitle reveal-text">Thoughts and insights</div>
+                
+                <div class="blog-grid">
+                    <article class="blog-card reveal-up">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Blog post" loading="lazy">
+                            <span class="blog-category">Web Development</span>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">February 1, 2026</time>
+                            <h3>The Future of Web Development in 2026</h3>
+                            <p>
+                                Exploring emerging trends and technologies shaping the future of web development, 
+                                from AI integration to enhanced performance optimizations.
+                            </p>
+                            <a href="#" class="blog-link">Read Article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-up">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="Blog post" loading="lazy">
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">January 28, 2026</time>
+                            <h3>Creating Accessible User Interfaces</h3>
+                            <p>
+                                A comprehensive guide to building inclusive web experiences that work for 
+                                everyone, with practical tips and real-world examples.
+                            </p>
+                            <a href="#" class="blog-link">Read Article →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-up">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Blog post" loading="lazy">
+                            <span class="blog-category">Tutorial</span>
+                        </div>
+                        <div class="blog-content">
+                            <time class="blog-date">January 20, 2026</time>
+                            <h3>Mastering CSS Grid Layouts</h3>
+                            <p>
+                                Deep dive into CSS Grid with advanced techniques, practical examples, and 
+                                best practices for creating responsive layouts.
+                            </p>
+                            <a href="#" class="blog-link">Read Article →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    -->
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Get In Touch</h2>
+                <div class="section-subtitle reveal-text">Let's work together</div>
+                
+                <div class="contact-content">
+                    <div class="contact-info reveal-left">
+                        <h3>Let's Create Something Amazing</h3>
+                        <p>
+                            I'm always interested in hearing about new projects and opportunities. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Your City, Country</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form reveal-right" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                aria-required="true"
+                                placeholder="John Doe"
+                            >
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                aria-required="true"
+                                placeholder="john@example.com"
+                            >
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                required 
+                                aria-required="true"
+                                rows="5"
+                                placeholder="Tell me about your project..."
+                            ></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </span>
+                        </button>
+                        
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Samrah Sayyed</h3>
+                    <p>Building digital experiences that make a difference.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Samrah Sayyed. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
