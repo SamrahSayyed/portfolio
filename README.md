@@ -45,6 +45,18 @@ portfolio-website/
 └── README.md              # This file
 ```
 
+## 🚀 Quick Start
+
+### 1. Download/Clone the Project
+
+```bash
+# If using git
+git clone <your-repo-url>
+cd portfolio-website
+
+# Or simply download and extract the ZIP file
+```
+
 ## 📚 Resources
 
 - [MDN Web Docs](https://developer.mozilla.org) - HTML/CSS/JS reference
