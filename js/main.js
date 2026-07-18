@@ -158,7 +158,9 @@ function initTypingAnimation() {
     
     const phrases = [
         'Full Stack Developer',
-        'UI/UX Enthusiast',
+        'Business Analyst',
+        'Embedded Systems Researcher',
+        'AI Applications Developer',
         'Problem Solver',
         'Creative Thinker'
     ];
